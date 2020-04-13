@@ -43,6 +43,9 @@ void setup()
 void loop()
 {
   // Strom und Spannungs Eingangssignal ermitteln
+  fSampleA = 0.0
+  fSampleV = 0.0
+  fSampleVBat = 0.0
   for(int i = 0; i < numberOfSamples; i++)
   {
     fSampleA = fSampleA + analogRead(A3); // Strom
